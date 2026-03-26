@@ -115,3 +115,15 @@ file_list = [
 for file in set(file_list):
     if file_list.count(file) > 1:
         print(f"Duplicate file found: {file}")
+
+
+
+#3 attempts me thon yes mandej nalet
+attempts=0
+while attempts < 3:
+    answer=input("Do you agree? (yes/no): ")
+    if answer == "yes":
+        print("Thank you")
+        break
+    attempts += 1
+print("3 strikes.You-re out")
