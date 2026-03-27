@@ -129,3 +129,43 @@ while attempts < 3:
 print("3 strikes.You-re out")
 
 
+#Dictionary Challenge
+user={"id":1,"name":"John","age":30}
+#1.Create new dict
+users={"id":1,"name":"John","age":30,"city":"New York"}
+#2.Keep only pairs with string values
+#3.Convert values to uppercase
+#4.Elegant & short solution
+user_str={
+    k.upper() : v.lower()
+    for k,v in users.items()
+    if isinstance(v,str)
+}
+print(user_str)
+
+
+#calc the total of values
+def total(*args):
+    print(sum(args))
+
+
+#Create the user profile
+def create_user(**kwargs):
+    print(type(kwargs))
+    print(kwargs)
+create_user(First_name="john",
+            last_name="Lushta",
+            age=33,
+            country="Egypt")
+
+
+#return examples
+def clean_name(name):
+    if not name:
+        return None
+    else:
+        cleaned=name.strip().lower()
+        return cleaned
+    
+cln_name=clean_name('M')
+print(cln_name)

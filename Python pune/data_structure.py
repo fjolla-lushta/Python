@@ -100,3 +100,63 @@ students=[['Maria',85],
 print(list(filter(lambda row : row[1]>= 70,students)))
 #E shtyp kujt ja nis emri me shkronjen M
 print(list(filter(lambda row: row[0].startswith('M'),students)))
+
+
+#Comprehension
+#1.Loop
+#2.Filter
+#3.data Transformation
+
+#Fibonacci eshte nje varg matematikor (pattern)
+
+
+#Set math operators
+#Union() => I bashkon te dy setet dhe heq numrat qe jane te duplikuar
+# Intersection() => Kthen numrat e perbashket te dy seteve
+# Symetric.difference() => Kthen numrt qe jane te veqant nuk i perfshin numrat e perbashket
+# Difference() => Nvaret te cili set kerkon diferencen,po cilen e zgjedh i merr veq elementet qe i kane te ndrushme
+
+
+#Set Relationships
+#psh. B.superset(A) => kjo pyte qe a jane te gjitha elementet e A ne B, ne baze te kesaj kthejm vlere bool
+#psh. A.issubset(C) => edhe kjo e ngjajshme me ata nalte
+#p.sh .isdisjoint() => nese nuk kan asnje te perbashket atehere kthen true,perndryshe false
+
+list[] 
+#Ordered
+#Duplicate
+#Indexed
+#Mutable
+
+tuple()
+#Ordered
+#Duplicate
+#Indexed
+#Immutable
+
+set{}
+#Unordered
+#No duplicate
+#No Indexed
+#Mutable
+
+dict{}
+#Ordered
+#Keys no duplicate bbut values yes
+#Indexed by keys
+#Mutable
+
+#Dictionary Methods
+user={"id":1,"name":"Fjolla","age":23}
+print(user.get("name"))
+
+#get() => returns the value safely,gives none if missing
+
+#Dictionary methods qe perdoren
+#keys()=>returns a view of the keys
+#values()=>returns a view of the values
+#items()=>
+#get()
+#update()
+#popitem()
+
