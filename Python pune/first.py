@@ -27,8 +27,8 @@ x=5 #real
 y=3 #imagjinar
 print(complex(x,y)) #output: 5+3j
 
-#math.floor()
-#math.ceil()
+#math.floor() nese osht 1.3 e bon 1,nese osht 2.7 e bon 2
+#math.ceil() nese osht 1.3 e bon 2 dmth gjithe vleren ma shume
 #math.trunc() nese e kena 1.5 e bon 1 , 2.3 e bon 2 dmth e merr numrin e pare para pikes
 
 #per register form

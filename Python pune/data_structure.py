@@ -54,12 +54,15 @@ print(comb)
 
 
 #Map
+#i bon krejt elementet e nje liste te medha
 letters=['a','b','c']
 print(list(map(str.upper,letters)))
 
+#e merr listen posht i kthen ne integer numrst qe jon shkrujt si string
 numbers=['1','2','3']
 print(list(map(int,numbers)))
 
+#I largon hapesirat e panevojshme ne nje string
 names=['   Maria','John   ',' Kumar  ']
 for n in map(str.strip(),names):
     print(n)
@@ -142,7 +145,7 @@ set{}
 
 dict{}
 #Ordered
-#Keys no duplicate bbut values yes
+#Keys no duplicate but values yes
 #Indexed by keys
 #Mutable
 

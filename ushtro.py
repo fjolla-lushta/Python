@@ -1,0 +1,99 @@
+person=["Fjolla",23,'Programere','Kosove']
+name,age,profession,country=person
+print(age)
+
+lista=[1,4,8,10,23]
+print(max(lista))
+print(min(lista))
+print(sum(lista))
+print(len(lista))
+
+
+comb_1=[1,2,3]
+comb_2=['a','b','c']
+comb_3=list(zip(comb_1,comb_2))
+print(comb_3)
+#Kjo menyre spo funksionojka
+comb_4=list(zip(comb_1 + comb_2))
+print(comb_4)
+
+letters=['A','B','C']
+print(list(map(str.lower,letters)))
+
+numbers=['1','2','3']
+print(list(map(int,numbers)))
+
+letters_2=['a','b','c']
+print(list(map(str.upper,letters_2)))
+
+spaces=['    Fjolla','Visar   ', '   Jon  ']
+print(list(map(str.strip,spaces)))
+
+#Kthen listen me elementet qe ka veq shkronja
+items=['123','Fjolla','23','Visar']
+for i in filter(str.isalpha,items):
+    print(i)
+
+
+items=['345','Fjolla2','Festim','456']
+for j in filter(str.isalpha,items):
+    print(j)
+
+
+lista=[5,2,4,6,1]
+print(sorted(lista))
+#pe kthejka ni vlere te caktuar ne nje liste
+print(abs(-3))
+
+
+prices=[20,180,240,30,60]
+print(list(filter(lambda p : p>40,prices)))
+print(list(filter(lambda p : p <100,prices)))
+
+shkolla=[['Fjolla','Lushta',85],
+         ['Visar','Imeri',70],
+         ['Jon','Doe',80]]
+print(list(filter(lambda row : row[1] == 'Lushta',shkolla)))
+print(list(filter(lambda row : row[2] <=70,shkolla)))
+print(list(filter(lambda row: row[0].startswith('J'),shkolla)))
+
+
+Bashkesia_1=[1,2,3,4]
+Bashkesia_2=[3,4,5,6]
+#Krejt elementet i merr pa duplikim
+Union=set(Bashkesia_1) | set(Bashkesia_2)
+#Te perbashktat
+Intersection=set(Bashkesia_1) & set(Bashkesia_2)
+#I merr qato qe i ka te ndryshme
+Symetric_Differnce=set(Bashkesia_1) ^ set(Bashkesia_2)
+Difference=set(Bashkesia_1) - set(Bashkesia_2)
+Difference_2=set(Bashkesia_2)- set(Bashkesia_1)
+print(Union)
+print(Intersection)
+print(Symetric_Differnce)
+print(Difference)
+print(Difference_2)
+#Set Relationships
+print(set(Bashkesia_2).issuperset(set(Bashkesia_1))) 
+print(set(Bashkesia_2).issuperset({3,4}))    
+print(set(Bashkesia_1).issubset(set(Bashkesia_2)))   
+print(set(Bashkesia_1).isdisjoint(set(Bashkesia_2)))
+
+
+user={'name':'Fjolla','age':23,'country':'Kosove'}
+print(user['name'])
+print(user.get('age'))
+#I shtyp vetem keys => name,age,cuntry
+print(list(user.keys()))
+#i shtyp vetem values => Fjolla,23,Kosove
+print(list(user.values()))
+#i shtup krejt listen me kyes edhe values
+print(list(user.items()))
+#munesh me specifiku sakte qka don me shtyp
+print(list(user.items())[0][0])
+#qishtu e bon update
+user.update({'email':'fjolla.lushta27@gmail.com'})
+print(user)
+#qishtu e specifikon qka don me fshi
+user.pop('age')
+print(user)
