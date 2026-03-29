@@ -67,7 +67,7 @@ elif not(email.endswith(".com") or email.endswith(".net")):
 elif len(email) > 254 :
       print("Email duhet me pas ma pak se 254 char")
 elif not(email[0].isalnum() or email[-1].isalnum()):
-    print("Email duhet me nis ehe me mbaru me shkronja dhe numra")
+    print("Email duhet me nis edhe me mbaru me shkronja dhe numra")
 else:
     print("Email ne rregull")
 

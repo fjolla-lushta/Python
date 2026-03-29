@@ -97,3 +97,55 @@ print(user)
 #qishtu e specifikon qka don me fshi
 user.pop('age')
 print(user)
+
+
+
+emri='Fjolla'
+mosha=23
+
+if emri and mosha >=18:
+    print("Munesh mu regjistru")
+
+password='23456789'
+if password and len(password) >=8 and "@" not in password and " " not in password:
+    print("Ky password bon")
+else:
+    print("Ky password nuk bon")
+
+email='fjolla.lushta27gmail.com'
+if email and "@" in email and email.endswith(".com"):
+    print("Ky email eshte ne rregull")
+else:
+    print("Kqyri kerkesat mire")
+
+
+username='Fjolla'
+if isinstance(username,str) and username is not None and len(username)>7:
+    print("Ky username eshte i vlefshem")
+else:
+    print("Ky username nuk eshte i vlefshem")
+
+
+import random
+num=random.randint(1,500)
+print(num)
+if num %2==0:
+    print("Cift")
+else:
+    print("Tek")
+
+emaili='fjolla.lushta27@gmail.com'
+if email == "":
+    print("Email bosh")
+elif not("@" in emaili and "." in emaili):
+    print("Mungon @ edhe .")
+elif emaili.endswith(".com"):
+    print("Nuk perfundon me .com")
+elif emaili.count("@") !=1:
+    print("Duhet veq nje @ me pas")
+elif len(emaili) < 254:
+    print("Email i gjatë shumë")
+elif not(emaili[0].isalnum() or emaili[-1].isalnum()):
+    print("Duhet mja nis e me perfundu me numera dhe shkronja")
+else:
+    print('Mire osht')
