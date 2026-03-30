@@ -7,7 +7,7 @@ write_log("App Started")
 write_log("User logged in")
 
 
-#clean an email and slit it into username and domain
+#clean an email and split it into username and domain
 def clean_and_split_email(email):
     cl_email=email.strip().lower()
     username,domain=cl_email.split("@")
@@ -39,4 +39,4 @@ email=input("Please enter your email:")
 #Action functions (Print,connect,send,call)
 #Validation functions (output true edhe false)
 #Transformation functions (input dhe output jane te ndryshem)
-#Orchestration function(thir funskione te tjera dhe organizon logjiken e programit)
+#Orchestration function(their funksione te tjera dhe organizon logjiken e programit)

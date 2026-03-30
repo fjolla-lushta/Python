@@ -149,3 +149,71 @@ elif not(emaili[0].isalnum() or emaili[-1].isalnum()):
     print("Duhet mja nis e me perfundu me numera dhe shkronja")
 else:
     print('Mire osht')
+
+passi='453322'
+if passi=='':
+    print("Sbon me kon i thate")
+elif len(passi) <8:
+    print("Ma i madh se 8 char")
+elif passi.strip() !=passi:
+    print("Sbon hapesire")
+elif passi != emaili:
+    print("Ndryshe me kon")
+elif not(emaili[0].isalnum() or emaili[-1].isalnum()):
+    print("Mja nis e me perfundu me shkronja e me numra")
+elif not any(char.isupper() for char in passi):
+    print("Nje shkronj te madhe duhet me kpermbajte")
+elif not any(char.islower() for char in passi):
+    print("Nje shkronje te vogel duhet me permbajte")
+else:
+    print("Mire osht")
+
+
+
+for i in range(1,11):
+    print(f'8 * {i} ={8*i}')
+
+
+
+file_list = [
+    'report.csv',
+    'data.xlsx',
+    'summary.docx',
+    'report.csv',
+    'data.csv'
+]
+for file in set(file_list):
+    if file_list.count(file)>1:
+        print(f'Ka duplikime {file}')
+
+
+attemps=0
+while attemps <3:
+    shkruj=input("Shkruj a yes/no:")
+    if shkruj =="yes":
+        print("Bravo")
+        break
+    attemps +=1
+print("U kry")
+
+
+def clean_name(name):
+    if not name:
+        return None
+    else:
+        clean_name=name.strip().lower()
+        return clean_name
+    print(clean_name("Fjolla     "))
+
+def write_log(message):
+    with open (r"C:\Main\python\app.log","a") as file:
+        file.write(message + "\n")
+
+write_log("Fjalia e pare")
+
+def seperate_email(email):
+    cl_email=email.strip().lower()
+    username,domain=cl_email.split("@")
+    return{"username:":username,
+           "domain:": domain}
+print(seperate_email("fjolla.lushta27@gmail.com"))
